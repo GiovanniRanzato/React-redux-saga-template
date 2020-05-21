@@ -1,0 +1,34 @@
+.TitleContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:72px;
+}
+.Title{
+    color: rgba(var(--text-main));;
+    font-size: 7vw;
+    padding:0;
+    margin: 0;
+    margin-top: 16px;
+}
+.Lead{
+    color: rgba(var(--text-main));;
+    font-weight: normal;
+    font-size: 4vw;
+    margin:8px;
+    border-top: 2px solid rgb(var(--main-color-1)); 
+}
+
+@media (min-width: 600px){
+    .TitleContainer{
+        margin-top:0;
+    }
+    .Title{
+        font-size: 5vw;
+        margin-top:8px;
+    }
+    .Lead{
+        font-size: 3vw;
+    }
+}

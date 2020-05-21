@@ -1,0 +1,32 @@
+.Footer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(var(--bg-color-2));
+}
+.FooterContent{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding:32px;
+    background-color: rgba(var(--bg-color-1));
+    color: rgba(var(--text-main)); 
+}
+a {
+    color:rgba(var(--main-color-1));;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(var(--main-color-3 ));
+}
+.SocialLink{
+    display: flex;
+    flex-flow: row;
+}
+.SocialLink div{
+    margin: 0 8px;
+}
+

@@ -1,0 +1,14 @@
+.FeatInputForm{
+    margin: auto;
+    text-align: center;
+}
+.FeatInputFormFooter{
+    text-align: center;
+}
+
+
+@media (min-width: 500px){
+    .FeatInputForm{
+        width: 500px;
+    }
+}

@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: 100, 100, 100, 1;
+  --bg-color-2: 50, 50, 50,1;
+  --main-color-1: 7, 123, 2470;
+  --main-color-2: 254, 5, 0;
+  --main-color-3: 255, 222, 4;
+  --card-text-color: 255, 255, 255, 1;
+  --card-border: 255, 255, 255, 1;
+
+  --text-main: 255,255,255, 1;
+  --text-highlight: 255,255,255, 1;
+  
+  --border-radius-bg: 32;
+  --border-radius-md: 16;
+  --border-radius-sm: 8;
+  --padding-bg: 32;
+  --padding-md: 16;
+  --padding-sm: 8;
+  --margin-bg: 32;
+  --margin-md: 16;
+  --margin-sm: 8;
+
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Avenir, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  background-color: rgb(var(--bg-color));
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* RESPONSIVE LAYOUT*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+

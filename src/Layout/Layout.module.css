@@ -1,0 +1,24 @@
+/* nav height 65px*/
+
+.Nav{
+    display:flex;
+    flex-direction: column;
+}
+.MainWrapper{
+  /*background-image: linear-gradient(to right,rgba(var(--main-color-1)),rgba(var(--bg-color)));*/
+  /*border-bottom: 2px solid rgba(var(--main-color-1));*/
+  background-size: 100%;
+  background-repeat: repeat, no-repeat;
+  overflow-x: hidden;
+}
+
+@media (min-width: 600px) {
+    .MainWrapper{
+        margin: 16px;
+        /*border: 2px solid  rgba(var(--main-color-2));*/
+        /*border-radius: 32px;*/
+      }
+      .Content{
+        margin-top: 16px;
+    }
+}

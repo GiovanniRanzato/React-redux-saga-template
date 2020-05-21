@@ -1,0 +1,16 @@
+
+.Logo img{
+    height: 64px;
+    width: 64px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+@media (min-width: 500px){
+    .Logo{
+        position: relative;
+        left: -2px;
+        top: -2px;
+    }
+}

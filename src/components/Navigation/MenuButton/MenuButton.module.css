@@ -1,0 +1,28 @@
+.MenuButton {
+    width: 45px;
+    height: 43px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid rgba(var(--main-color-1));
+    border-radius: 8px;
+  }
+
+  
+  .Bar1, .Bar2, .Bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: rgba(var(--main-color-1));
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .Change .Bar1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  .Change .Bar2 {opacity: 0;}
+  
+  .Change .Bar3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+  }

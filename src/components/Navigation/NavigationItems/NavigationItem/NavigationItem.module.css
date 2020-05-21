@@ -1,0 +1,56 @@
+.NavigationItem {
+    width: 100%;
+    margin:0;
+}
+.NavigationItem a {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    margin: 16px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(var(--main-color-1));
+    font-weight: bold;
+    border: 1px solid rgba(var(--main-color-1));
+    border-radius: 100px;
+    
+}
+.NavigationItem a.active {
+    background-color: rgba(var(--main-color-3));
+    border: 1px solid rgba(var(--main-color-3));
+    color: rgba(var(--bg-color));
+}
+.NavigationItem a.active:hover{
+    background-color: transparent;
+}
+.NavigationItem a:hover
+{
+    background-color: rgba(var(--main-color-1));
+    border: 1px solid rgba(var(--main-color-1));
+    color: rgba(var(--bg-color));
+}
+@media (min-width: 600px){
+    .NavigationItem {
+        display: flex;
+        align-items: center; 
+        width: auto;         
+        height: 100%;
+        margin:0;
+    }
+    .NavigationItem a {
+        display: block;
+        padding: 12px 32px;
+        margin: 0 8px;    
+    } 
+    .NavigationItem a.active {
+        background-color: rgba(var(--main-color-3));
+        border: 1px solid rgba(var(--main-color-3));
+        color: rgba(var(--bg-color));
+    }
+    .NavigationItem a.active:hover{
+        background-color: rgba(var(--main-color-1));
+        border: 1px solid rgba(var(--main-color-1));
+        color: rgba(var(--bg-color));
+    }
+
+}

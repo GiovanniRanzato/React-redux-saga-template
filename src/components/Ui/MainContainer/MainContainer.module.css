@@ -1,0 +1,24 @@
+.MainContainer {
+    margin:16px 0 32px 0;
+    padding: 32px 0;
+    /*border: 2px solid rgb(var(--main-color-1));*/
+    border-radius: 32px;
+    /*background-image: linear-gradient( to left, #ff3900, rgba(255, 204, 0, 0.468));*/
+    background-color: rgba(var(--bg-color), 0.5);
+    display:flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+@media (min-width: 600px){
+    .MainContainer {
+        /*border: 2px solid rgb(var(--main-color-1));*/
+        margin: 32px 16px;
+    }
+}
+@media (min-width: 800px){
+    .MainContainer {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+}

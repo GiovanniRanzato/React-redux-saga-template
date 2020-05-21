@@ -1,0 +1,86 @@
+/* FIX USING GLOBAL VARIABLES AND ADD MORE STYLES*/
+.Button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 8px 32px;
+    margin: 8px;
+    font-weight: bold;
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+}
+
+.Success {
+    color: rgb(0, 172, 37);
+    border: 1px solid rgb(0, 172, 37);;
+}
+
+.Danger {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+.Button:hover{
+    color:white;
+}
+.Button:disabled{
+    cursor: not-allowed;
+}
+.Danger:hover {
+    background-color: #ff0000;
+}
+.Success:hover {
+    background-color: rgb(0, 172, 37);
+}
+.Success:disabled {
+    background-color: #333333;
+    cursor: not-allowed;
+    border: 1px solid #767676c0;
+    color: #767676c0;
+}
+
+.UiButton {
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: 5px solid #ffcc00ff;
+    border-radius: 50px;
+    color: #ff410eff;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 30px;
+    /*box-shadow: 1px 1px 15px #33333390;*/
+}
+
+.UiButton:hover, .OrderButton:active {
+    background-color: #ffcc00ff;
+    border: 5px solid #fff;
+    color: #fff;
+}
+
+.UiButton:disabled {
+    background-color: #333333;
+    cursor: not-allowed;
+    border: 2px solid #767676c0;
+    color: #767676c0;
+}
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.UiButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}

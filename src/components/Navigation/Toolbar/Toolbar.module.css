@@ -1,0 +1,37 @@
+.Toolabar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0px 0px;
+    z-index: 201; 
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgba(var(--bg-color)),rgba(var(--bg-color-2)) );
+}
+
+.MobileOnly{
+    display:none;
+}
+.DesckTopOnly{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    /*border-bottom: 2px solid rgba(var(--main-color-3));*/
+}
+
+@media (max-width:599px){
+    .DesckTopOnly{
+        display:none;
+    }
+    .MobileOnly{
+        display: block;
+        align-items: center;
+    }
+    .Toolabar {
+        position: fixed;
+        top: 0px;
+        border-radius: 0;
+        padding: 2px 16px 2px 2px;
+    }
+
+}

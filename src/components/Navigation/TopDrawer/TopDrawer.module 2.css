@@ -1,0 +1,23 @@
+.SideDrawer {
+    position: fixed;
+    width: 100%;
+    left:0;
+    top:56px;
+    z-index: 200;
+    background-image: linear-gradient(to right, rgba(var(--bg-color)),rgba(var(--bg-color-2)) );
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding: 16px;
+    transition: all 0.4s ease-out;
+}
+@media (min-width: 600px){
+    .SideDrawer{
+        display: none;
+    }
+}
+.Open{
+    transform: translateY(0);
+}
+.Close{
+    transform: translateY(-100%);
+}

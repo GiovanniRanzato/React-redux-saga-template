@@ -1,0 +1,30 @@
+.MainContainer{      
+    min-width: 265px;
+    padding:16px;
+    margin: 16px 8px;
+    border-radius: 16px;
+    color: rgb(var(--card-text-color));
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    
+}
+.Header{
+    border-bottom: 2px solid rgb(var(--card-border));
+    margin-bottom: 16px;
+}
+.Content{
+    padding-bottom: 16px;
+}
+.Footer{
+    width: 100%;
+    border-top: 2px solid rgb(var(--card-border));
+    margin-top: auto;
+   
+}
+.BackGroundTypeNormal{
+    background-color: rgba(var(--bg-color),0.90);
+}
+.BackGroundTypeClear{
+    background-color: rgba(250,250,250,0.20);
+}
